@@ -11,6 +11,9 @@ export default function() {
       <div>
         aaaaaaaaaaaaaaaaa
       </div>
+      <div>
+        bbbbbbb
+      </div>
     </div>
   );
 }
