@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'dva';
 import router from 'umi/router';
 import { Button, WhiteSpace, WingBlank } from 'antd-mobile';
+import Link from 'umi/link';
 
 // import styles from './index.css';
 @connect()
@@ -35,6 +36,8 @@ class IndexPage extends Component {
         <Button type="primary" onClick={this.goToflashSalesDelivery}>闪购提货</Button><WhiteSpace />
         <Button type="primary" onClick={this.goToflashSalesRefund}>闪购退货</Button><WhiteSpace />
         <Button type="primary" onClick={this.goToTest}>test</Button><WhiteSpace />
+
+        <Link >react 官网示例</Link>
       </WingBlank>
     );
   }

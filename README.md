@@ -1,23 +1,17 @@
-# 麻雀移动端购物网站
+# 学习资料网站
 
-说点啥 
-
-说点啥。。。
-
-## 主要框架或技术
-
-- [umi](https://umijs.org/)
-- [umi git](https://github.com/umijs/umi)
-- [dva](https://github.com/dvajs/dva)
-- [antd-mobile](https://mobile.ant.design/index-cn)
-- [antd](https://ant.design/index-cn)
-- [react-weui](https://github.com/weui/react-weui)
-- [weui](https://github.com/Tencent/weui)
+- [react](https://react.docschina.org/)
+- [umi](https://umijs.org/zh/)
+- [dva](https://dvajs.com/)
+- [ant](https://ant.design/index-cn)
+- [ant-moible](https://mobile.ant.design/index-cn)
+- [印记中文](https://docschina.org/)
 
 ## 目录结构
 
 ``` structure
 ├── dist/                          // 构建产物目录
+├── mock/                          // mock 文件所在目录，基于 express
 └── src/                           // 源码目录，可选，把里面的内容直接移到外面即可
     ├── layouts/
     │   └── index.js               // 全局布局
@@ -29,18 +23,12 @@
         ├── page1.js               // 页面 1，任意命名
         └── page2.js               // 页面 2，任意命名
     ├── global.css                 // 约定的全局样式文件，自动引入，也可以用 global.less
-    ├── _routes.json               // 路由配置，和文件路由二选一
+    ├── global.js                  // 可以在这里加入 polyfill
 ├── test/                          // 测试用例放这里
 ├── .umirc.js                      // umi 配置
-├── .webpackrc                     // webpack 配置
 └── package.json
 
 ```
-
-## 路由
-
-- 文件夹下游 page.js 时，其他文件不会生成路由。
-- 每个路由文件夹下的 /models/,/services/, /helps/, /utils/, /components/ 不会生成路由。
 
 ## 多布局文件写法
 
