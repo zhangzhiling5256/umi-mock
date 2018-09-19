@@ -1,8 +1,5 @@
 
-html, body, #root {
+html, body, :global(#root) {
   height: 100%;
 }
 
-body {
-  margin: 0;
-}
